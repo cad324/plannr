@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+#progress-div {
+  display: inline-block;
+  margin: 20px;
+}
+
+#progress-bar {
+  width: 400px;
+  height: 13px;
+  border-radius: 10px;
+  background: #dbdbdb;
+  text-align: center;
+  margin-bottom: 5px;
+  border: 1px #fff solid;
+}
+
+#fill {
+  height: 100%;
+  background-color: #bb2bff;
+  border-radius: inherit;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  animation: fillUp 1.5s;
+}
+
+@keyframes fillUp {
+  from {width: 0}
+  to: {width: 100%}
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper-tb {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.wrapper-tb span {
+  margin: 0 20px;
+}
+
+#completed div div {
+  background-color: #15c100;
+}
+
+#incomplete div div {
+  background-color: #de7100;
+}
+
+#missed div div {
+  background-color: #ff0000;
+}
+
+#time h3 {
+  margin-bottom: 25px;
+}
+
+#time div {
+  padding: 15px 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.gu-mirror {
+  display: inline !important;
+  text-align: center;
+  background-color: grey;
+  border-radius: 5px;
+}
