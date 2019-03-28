@@ -27,16 +27,11 @@ body {
 
 #fill {
   height: 100%;
+  width:0;
   background-color: #bb2bff;
   border-radius: inherit;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  animation: fillUp 1.5s;
-}
-
-@keyframes fillUp {
-  from {width: 0}
-  to: {width: 100%}
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 .App {

@@ -3,6 +3,7 @@ import './App.css';
 import * as ReactDOM from 'react-dom';
 import ProgressBar from './components/ProgressBar'
 import TimeTable from './components/TimeTable'
+import styled, {keyframes} from 'styled-components'
 
 class App extends Component {
   constructor(props) {

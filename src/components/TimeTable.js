@@ -13,7 +13,8 @@ const activityStyle = {
   margiBottom: 10,
   width: 180,
   userSelect: 'none',
-  borderRadius: 5
+  borderRadius: 5,
+  cursor: 'grab'
 }
 
 function Activity(props) {
