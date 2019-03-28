@@ -2,7 +2,7 @@
 
 This is a personal task management app that allows the user to keep track of the progress of their tasks.
 
-![](documents/plannr_demo.gif)
+!["Planner Demo"](documents/plannr_demo.gif)
 
 Currently in development to add more functionality and sync with timetable.
 

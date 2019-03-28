@@ -33,7 +33,6 @@ class TimeTable extends Component {
     let countCompleted = ReactDOM.findDOMNode(this).querySelectorAll('#completed div div');
     this.setState({percentage: parseInt(countCompleted.length/6 * 100)});
     drake.on('drop', (el, source, target, sib) => {
-      let countCompleted = ReactDOM.findDOMNode(this).querySelectorAll('#completed div div');
       this.setState({percentage: parseInt(countCompleted.length/6 * 100)});
       this.props.updatePercent();
     });
@@ -47,13 +46,13 @@ class TimeTable extends Component {
     return (
       <div className="wrapper-tb">
         <span id="time">
-          <h3>TIME</h3>
-          <div>8 AM</div>
-          <div>10 AM</div>
-          <div>12 PM</div>
-          <div>2 PM</div>
-          <div>4 PM</div>
-          <div>6 PM</div>
+          <h3>PRIORITY</h3>
+          <div>Priority 1</div>
+          <div>Priority 2</div>
+          <div>Priority 3</div>
+          <div>Priority 4</div>
+          <div>Priority 5</div>
+          <div>Priority 6</div>
         </span>
 
         <span id="incomplete" className="status">
